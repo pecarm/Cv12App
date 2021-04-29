@@ -1,0 +1,25 @@
+﻿<Window x:Class="Cv12App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Cv12App"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="120,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="textBoxOp1"/>
+        <Label Content="1. operand" HorizontalAlignment="Left" Margin="50,50,0,0" VerticalAlignment="Top" Name="labelOp1"/>
+        <Label Content="2. operand" HorizontalAlignment="Left" Margin="50,100,0,0" VerticalAlignment="Top" Name="labelOp2"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="120,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="textBoxOp2"/>
+        <Label Content="Operátor" HorizontalAlignment="Left" Margin="50,150,0,0" VerticalAlignment="Top" Name="labelOperator"/>
+        <ComboBox HorizontalAlignment="Left" Margin="120,150,0,0" VerticalAlignment="Top" Width="120" Name="dropDownOperator" SelectedValuePath="Content">
+            <ComboBoxItem Content="+" HorizontalAlignment="Left" Width="118" IsSelected="True"/>
+            <ComboBoxItem Content="-" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="*" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="/" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
+        <Button Content="Spočti" HorizontalAlignment="Left" Margin="300,100,0,0" VerticalAlignment="Top" Width="75" IsCancel="True" Click="Button_Click"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="450,100,0,0" VerticalAlignment="Top" Name="labelVysledek"/>
+
+    </Grid>
+</Window>
